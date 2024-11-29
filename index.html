@@ -23,10 +23,10 @@
   <body>
     <header class="header">
       <div class="container header-container">
+        <a class="header-logo logo" href="./index.html">
+          Web<span class="dark">Studio</span>
+        </a>
         <nav class="nav">
-          <a class="header-logo logo" href="./index.html">
-            Web<span class="dark">Studio</span>
-          </a>
           <ul class="nav-list">
             <li class="nav-item">
               <a class="nav-link active" href="./index.html">Studio</a>
@@ -39,7 +39,7 @@
             </li>
           </ul>
         </nav>
-        <address>
+        <address class="header-address">
           <ul class="address-list">
             <li class="address-item">
               <a class="address-link" href="mailto:info@devstudio.com">
@@ -53,11 +53,16 @@
             </li>
           </ul>
         </address>
+        <button class="mobile-menu-btn" type="button">
+          <svg class="mobile-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
-      <section class="hero section">
+      <section class="hero section hide">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn">Order Service</button>
@@ -120,7 +125,7 @@
         </div>
       </section>
 
-      <section class="team section">
+      <section class="team section hide">
         <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -368,7 +373,7 @@
         </div>
       </section>
 
-      <section class="portfolio section">
+      <section class="portfolio section hide">
         <div class="container portfolio-container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -650,13 +655,80 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="policy-link" href="#" target="_blank">Privacy Policy</a>
+              <div class="agreement-text-wrap">
+                <span class="agreement-text">
+                  I accept the terms and conditions of the
+                </span>
+                <a class="policy-link" href="#" target="_blank"
+                  >Privacy Policy</a
+                >
+              </div>
             </label>
           </div>
           <button class="modal-form-btn" type="submit">Send</button>
         </form>
       </div>
+    </div>
+
+    <div class="mobile-menu">
+      <button class="mobile-close-btn close-btn" type="button">
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-links-list">
+        <li class="mobile-link-item active">
+          Studio<a class="mobile-link" href=""></a>
+        </li>
+        <li class="mobile-link-item">
+          Portfolio<a class="mobile-link" href=""></a>
+        </li>
+        <li class="mobile-link-item">
+          Contacts<a class="mobile-link" href=""></a>
+        </li>
+      </ul>
+      <ul class="mobile-address-list">
+        <li class="mobile-address-item">
+          <a class="mobile-address" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-address-item">
+          <a class="mobile-address" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials socials-list">
+        <li class="mobile-social social-item">
+          <a class="social-link mobile-social-link" href="">
+            <svg class="mobile-social-icon social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social social-item">
+          <a class="social-link mobile-social-link" href="">
+            <svg class="mobile-social-icon social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social social-item">
+          <a class="social-link mobile-social-link" href="">
+            <svg class="mobile-social-icon social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social social-item">
+          <a class="social-link mobile-social-link" href="">
+            <svg class="mobile-social-icon social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
